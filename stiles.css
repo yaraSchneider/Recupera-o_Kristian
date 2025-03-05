@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+}
+
+.FundoVerde{
+    background-color: #f4f8ec;
+}
+
+.barra-navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: orange;
+}
+
+.menu-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.carrinho {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botao-login {
+    background: orange;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.destaque {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.texto-destaque {
+    max-width: 50%;
+}
+
+.etiqueta {
+    background: #ffeeba;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+}
+
+.botoes-destaque {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.botao-pedir, .botao-reservar {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.botao-pedir {
+    background: orange;
+}
+
+.botao-reservar {
+    background: green;
+    color: white;
+}
+
+.cardapio {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.filtros-cardapio{
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.filtros-cardapio button {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #D0CCC7;
+}
+
+.filtros-cardapio .ativo {
+    background: black;
+    color: white;
+}
+
+.itens-cardapio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-prato {
+    background: #D0CCC7;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.perecoButon{
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    justify-content: center;
+}
+
+#butonLaranja{
+       background: orange;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#Letra{
+    padding-top: 8px;
+}
+
+.avaliacao {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.estrelas{
+    width: 100%;
+    border-radius: 15px;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+    padding-top: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+.lista-chefs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-left: 40PX;
+}
+
+.escritaCentralizada{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#serif{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 10px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #382b22;
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+@media (max-width: 768px) {
+    .barra-navegacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .destaque {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-destaque {
+        max-width: 100%;
+    }
+
+    .itens-cardapio, .lista-chefs {
+        grid-template-columns: 1fr;
+    }
+}
